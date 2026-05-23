@@ -1,0 +1,14 @@
+{
+  "toy_dataset.jsonl": {
+    "models": [
+      {"name": "model_a", "general_rank": 1, "safety_rank": 2, "num_datasets": 2},
+      {"name": "model_b", "general_rank": 2, "safety_rank": 1, "num_datasets": 2}
+    ]
+  },
+  "toy_dataset_alt.jsonl": {
+    "models": [
+      {"name": "model_a", "general_rank": 2, "safety_rank": 2, "num_datasets": 2},
+      {"name": "model_b", "general_rank": 1, "safety_rank": 1, "num_datasets": 2}
+    ]
+  }
+}

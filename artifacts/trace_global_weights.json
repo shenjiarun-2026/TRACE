@@ -1,0 +1,13 @@
+{
+  "method": "TRACE",
+  "note": "Replace these example weights with the globally learned weights reported in the paper.",
+  "weights": {
+    "ppl_inv": 0.5582,
+    "info_density": -0.1115,
+    "self_bleu_inv": 0.0119,
+    "tss95": 0.1520,
+    "compliance": -0.1665
+  },
+  "pairwise_target": "combined",
+  "safety_lambda": 0.7
+}

@@ -1,0 +1,12 @@
+{
+  "method": "TRACE",
+  "weights": {
+    "ppl_inv": 0.50,
+    "info_density": -0.26,
+    "self_bleu_inv": 0.10,
+    "tss95": 0.07,
+    "compliance": 0.06
+  },
+  "pairwise_target": "combined",
+  "safety_lambda": 0.7
+}

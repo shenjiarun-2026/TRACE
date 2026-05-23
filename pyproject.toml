@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace-safety-curation"
+version = "0.1.0"
+description = "TRACE: Transferable Risk-Aware Curation via Explicit descriptors"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TRACE Authors"}]
+dependencies = [
+  "numpy>=1.23",
+  "scikit-learn>=1.2",
+  "torch>=2.0",
+  "transformers>=4.35",
+  "tqdm>=4.65",
+  "nltk>=3.8",
+]
+
+[project.optional-dependencies]
+toxicity = ["detoxify>=0.5"]
+embeddings = ["sentence-transformers>=2.2"]
+data = ["pandas>=2.0", "pyarrow>=12.0"]
+dev = ["pytest>=7.0", "ruff>=0.4"]
+
+[tool.setuptools.packages.find]
+include = ["trace*"]
+
+[tool.ruff]
+line-length = 100

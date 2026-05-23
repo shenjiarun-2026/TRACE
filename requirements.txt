@@ -1,0 +1,11 @@
+numpy>=1.23
+scikit-learn>=1.2
+torch>=2.0
+transformers>=4.35
+tqdm>=4.65
+nltk>=3.8
+# Optional:
+# detoxify>=0.5
+# sentence-transformers>=2.2
+# pandas>=2.0
+# pyarrow>=12.0
