@@ -78,7 +78,6 @@ tests/          Minimal unit tests
 
 ## Notes for reproducibility
 
-- Replace example weights in `artifacts/trace_global_weights.json` with the final weights used in your paper.
 - Do not commit model checkpoints, HuggingFace caches, or DKL generation caches.
 - If you use topic-level subdatasets, pass directories to `--data`; `expand_data_inputs` will track parent-to-subdataset mappings.
 
