@@ -1,4 +1,4 @@
-from trace.pairwise import rank_to_score, combined_rank_score, make_pair_features
+from curate.pairwise import rank_to_score, combined_rank_score, make_pair_features
 
 
 def test_rank_to_score():

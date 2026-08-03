@@ -1,0 +1,10 @@
+### model
+model_name_or_path: saves/Mistral-7B-Instruct-v0.3/full-Mistral_7B_instruct_v0_3_ppl_tss/sft
+template: mistral
+trust_remote_code: true
+
+### export
+export_dir: saves/datasets/Mistral_7B_instruct_v0_3_ppl_tss
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false

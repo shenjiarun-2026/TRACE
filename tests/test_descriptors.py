@@ -1,4 +1,4 @@
-from trace.descriptors import descriptor_features
+from curate.descriptors import descriptor_features
 
 
 def test_descriptor_features_basic():

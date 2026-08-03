@@ -1,8 +1,8 @@
-# TRACE
+# CURATE
 
-**TRACE**: Transferable Risk-Aware Curation via Explicit descriptors.
+**CURATE**: CUrating safety tuning data via RObust and TrAnsferable dEscriptors.
 
-TRACE is a gradient-free data curation pipeline for safety SFT. It learns an interpretable linear scorer over lightweight dataset-level descriptors from benchmark-induced pairwise dataset preferences pooled across multiple model families.
+CURATE is a gradient-free data curation pipeline for safety SFT. It learns an interpretable linear scorer over lightweight dataset-level descriptors from benchmark-induced pairwise dataset preferences pooled across multiple model families.
 
 ## Highlights
 
@@ -21,7 +21,7 @@ pip install -e '.[toxicity,embeddings,data,dev]'
 
 ## Data format
 
-TRACE expects JSON/JSONL records with at least:
+CURATE expects JSON/JSONL records with at least:
 
 ```json
 {"prompt": "...", "output": "..."}
@@ -44,13 +44,13 @@ Benchmark-induced rankings are stored as:
 }
 ```
 
-## Train global TRACE weights
+## Train global CURATE weights
 
 ```bash
 MODEL_PATHS="model_a,model_b,model_c" \
 DATA_PATHS="data/dataset_a.jsonl,data/dataset_b.jsonl" \
 RANKINGS="configs/benchmark_rankings.json" \
-bash scripts/train_trace_global.sh
+bash scripts/train_curate_global.sh
 ```
 
 This computes descriptors for each model and dataset, constructs model-specific pairwise dataset preferences, pools all pairwise rows, and trains a single global logistic regression scorer.
@@ -60,17 +60,17 @@ This computes descriptors for each model and dataset, constructs model-specific 
 ```bash
 MODEL="path/to/unseen-model" \
 DATASET="data/candidate_pool.jsonl" \
-WEIGHTS="artifacts/trace_global_weights.json" \
-bash scripts/filter_with_trace.sh
+WEIGHTS="artifacts/curate_global_weights.json" \
+bash scripts/filter_with_curate.sh
 ```
 
 ## Repository layout
 
 ```text
-trace/          Core TRACE library
+curate/         Core CURATE library
 scripts/        Reproduction scripts
 examples/       Toy data/ranking/weight examples
-artifacts/      Released global TRACE weights
+artifacts/      Released global CURATE weights
 baselines/      Baseline scaffolds/wrappers
 results/        Result summaries and generated reports
 tests/          Minimal unit tests
@@ -83,4 +83,4 @@ tests/          Minimal unit tests
 
 ## Citation
 
-If you use TRACE, please cite the corresponding paper.
+If you use CURATE, please cite the corresponding paper.

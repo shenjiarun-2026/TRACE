@@ -1,5 +1,5 @@
 {
-  "method": "TRACE",
+  "method": "CURATE",
   "weights": {
     "ppl_inv": 0.50,
     "info_density": -0.26,

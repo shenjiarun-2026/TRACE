@@ -1,0 +1,13 @@
+{
+  "method": "CURATE",
+  "note": "Replace these example weights with the globally learned weights reported in the paper.",
+  "weights": {
+    "ppl_inv": 0.452,
+    "info_density": -0.115,
+    "self_bleu_inv": 0.117,
+    "tss95": 0.149,
+    "compliance": -0.161
+  },
+  "pairwise_target": "combined",
+  "safety_lambda": 0.7
+}
